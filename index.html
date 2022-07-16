@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+function lw()
+{
+   x = document.getElementById("div3");
+   z = document.getElementById("div2");
+   x.innerHTML=z.value;
+ 
+}
+    </script>
+    <style>
+        html, body {
+   height: 100%;
+}
+        a{
+            margin: 160px;
+            height: 100%;
+        }
+        #div1{
+            background-color: gray;
+            font-size: 22px;
+            display: block;
+            
+        }
+        #head1:hover{
+            background-color: gray;
+            color:black ;
+            text-overflow: clip;
+            width: 100%;
+        }
+        #div2{
+            background-color: gray;
+            width:49.5%;
+            float:left;
+            height: 100%;
+            padding-top: 0%;
+            font-size: 25px;
+        }
+        #div3{
+            background-color: #D3D3D3;
+            
+            width: 49%;
+            float:right;
+            height: 100%;
+            font-size: 25px;
+            
+           
+        }
+        textarea{
+            resize: none;
+        }
+        #head1{
+           padding-left: 40%;
+           background-color: black;
+        color:white;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+<h1 id="head1"> COMPILIER</h1>
+<textarea id="div2" onkeyup="lw()" placeholder="123-45-678"> </textarea> 
+<div id="div3"></div>
+
+</body>
+</html>
