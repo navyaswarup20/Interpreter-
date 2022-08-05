@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html> 
 <head>
+<!-- 
+The output will be reflected on the right side. And the user will write in the textbox that is on the left side.
+For calling, we will use --getElementById..
+In the browser, the page area will be referred to as white screen i.e. document 
+//element-tag  x and z have reffernces
+external: will change into inner HTML. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
 function lw()
 {
-   x = document.getElementById("div3");
+   x = document.getElementById("div3"); 
    z = document.getElementById("div2");
-   x.innerHTML=z.value;
+   x.innerHTML = z.value;
  
 }
+
+function myFunction() {
+   var element = document.getElementById("div2");
+   element.classList.toggle("dark-mode");
+}
+
     </script>
     <style>
         html, body {
-   height: 100%;
-}
+            height: 100%;
+              width: 100%;
+             
+        }
         a{
             margin: 160px;
             height: 100%;
@@ -37,17 +51,20 @@ function lw()
             float:left;
             height: 100%;
             padding-top: 0%;
-            font-size: 25px;
+            font-size: 17px;
         }
+
+    .dark-mode {
+     background-color: black;
+  color: white;
+}
+
         #div3{
             background-color: #D3D3D3;
-            
             width: 49%;
             float:right;
             height: 100%;
-            font-size: 25px;
-            
-           
+            font-size: 15px;   
         }
         textarea{
             resize: none;
@@ -55,16 +72,24 @@ function lw()
         #head1{
            padding-left: 40%;
            background-color: black;
-        color:white;
+           color:white;
+        }
+        button{
+            float: right;
+            border-radius: 15px;
+            width: 10%;
+            height: 5% ;
+            padding-right: 0%;
         }
     </style>
 </head>
-
-
 <body>
-    
+
+    <!--  onkeyup is an event name, i.e., advanced attribute for Textarea 
+lw(): the effect will be called as the trigger (function will be called) -->
+    <button onclick="myFunction()"><b>Dark mode</b></button>
 <h1 id="head1"> COMPILIER</h1>
-<textarea id="div2" onkeyup="lw()" placeholder="123-45-678"> </textarea> 
+<textarea id="div2" onkeyup="lw()" placeholder="Write Your code here"> </textarea> 
 <div id="div3"></div>
 
 </body>
