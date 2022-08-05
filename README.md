@@ -9,7 +9,7 @@ It is for the beginner who wants to test the code. It includes a logic where usi
 a) HTML
 b) CSS
 c) Javascript
-3. ##How to use it?
+3. ## How to use it?
 We want to click the link, and then we can easily use it.
 
 ***There is also a light mode option. You can click the button and the text color change to white from black.***
