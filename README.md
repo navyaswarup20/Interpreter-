@@ -6,9 +6,9 @@ It is a **live Interpreter** for HTML, CSS, and JavaScript.
 Users can write a piece of code here. 
 It is for the beginner who wants to test the code. It includes a logic where using innerHTML, and we can easily convert the code.
 ## Technology used:
-a) HTML
-b) CSS
-c) Javascript
+1. HTML
+2. CSS
+3. Javascript
 ## How to use it?
 We want to click the link, and then we can easily use it.
 
