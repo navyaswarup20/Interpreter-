@@ -13,3 +13,8 @@ It is for the beginner who wants to test the code. It includes a logic where usi
 We want to click the link, and then we can easily use it.
 
 ***There is also a light mode option. You can click the button and the text color change to white from black.***
+
+Images:
+
+![3](https://user-images.githubusercontent.com/72911047/183057115-8ea9e92f-950b-4ceb-a1a7-43019ed10f48.png)
+
